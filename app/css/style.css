@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    
+}
+
+nav{
+    font-family: 'Lobster', cursive;
+}
+
+body{
+    background-color:    #000000;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+}
+
+footer {
+    padding-top: 20px;
+    width: 100%;
+    height: 6rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div p{    
+text-align: justify center;
+}
+  
+h5{
+    color: #ffffff;
+}
+
+.logo{
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo2{
+    width: 2rem;
+    height: 4rem;
+}
+
+.carousel-item{
+    height: 32rem;
+    width: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+
+.last{
+    bottom: 5px;
+    right: 5px;
+    position: fixed;
+    border: 0px;
+}
+
+.rodape{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px; */
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.butao{
+    border-radius: 5px;
+    border: 4px solid #ffffff;
+}
+
+.butao:hover{
+    border:3px solid #ff7700;
+}
+
+.linha{
+    width: 100%;
+    height: 0.1rem;
+    background-color: #ffffff;
+    display: block;
+}
+
+.filme-container {
+    transition: opacity 3s ease-in-out; /* Adiciona uma transição suave de 0,5 segundos para a opacidade */
+    animation: sumir 5s ease-in-out forwards;
+    animation: aparecer 5s ease-in-out forwards;
+}
+
+.filme-hidden {
+    opacity: 0.1; /* Define a opacidade dos filmes ocultos para 0 */
+
+}
+
+@keyframes sumir{
+
+    from{
+        width: 100%;
+        opacity: 1;        
+    }to{
+        width: 50%;
+        opacity: 0;        
+    }
+    
+
+}
+
+
+@keyframes aparecer {
+
+    from{
+        width: 50%;
+        opacity: 0;        
+    }to{
+        width: 100%;
+        opacity: 1;        
+    }
+    
+}
+

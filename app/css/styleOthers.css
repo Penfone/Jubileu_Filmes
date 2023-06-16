@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+    /* display: flex; */
+    overflow-x: hidden;
+}
+
+nav{
+    font-family: 'Lobster', cursive;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+}
+textarea {
+    overflow-y: scroll;
+    height: 100px;
+    resize: none; 
+}
+
+table{
+    border: 1px solid #8a8989;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr{
+    border: 1px solid #8a8989;
+}
+
+th, td{
+    border: 1px solid #8a8989;
+    padding: 5px;
+    text-align: center;
+    color: #000000;
+}
+
+th{
+    background-color: #8a8989;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+tr:hover td{
+    background-color: #a7a7a7;
+    border: 2px solid black;
+}
+
+.tab{
+    width: 90%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin-left: 4.5%;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.logo{
+    width: 2rem;
+    height: 2rem;
+}
+
+.divisor{
+    /* width: 100%;
+    height: 6rem;     */
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.auxDivisor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: center;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    text-align: left;   
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+}
+
+.coluna label{
+    text-align: center;
+}
+
+.coluna input, select{
+    width: 70%;
+    height: auto;
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+}
+
+.coluna-1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;   
+    /* align-items: center; */
+    justify-content: left;
+    width: 30%;
+    height: 100%;
+}
+
+.coluna-2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;   
+    /* align-items: center; */
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+}
+
+.gen{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.sinopse {
+        width: 300px;
+        max-width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .sinopse textarea {
+        width: 100%;
+        height: 100%;
+        resize: none;
+    }
+
+    .alert{
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 60px;            
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        border-radius: 5px;
+        border: 5px solid darkred;
+        background-color: red;
+        color: darkred;
+    }
+
+    .mens_erro{
+        display: none;
+        color: red;
+    }
